@@ -87,7 +87,8 @@ namespace Student.Controllers
         public ActionResult Create()
         {
             ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "CourseName");
-            return View();
+            var studentModel = new StudentModel();
+            return View(studentModel);
         }
 
         

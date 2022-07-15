@@ -37,7 +37,8 @@ namespace Student.Controllers
 
         public ActionResult Create()
         {
-            return View();
+            var courseModel = new CourseModel();
+            return View(courseModel);
         }
 
         [HttpPost]
